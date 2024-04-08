@@ -1,0 +1,159 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}COMPETENCES & PROJETS REALISES{% endblock %}
+
+{% block body %}
+<style>
+    body {
+        background-color: #f2f2f2; /* Gris légèrement plus foncé */
+        font-family: 'Arial', sans-serif;
+        color: #555; /* Gris foncé pour le texte */
+    }
+
+    .header {
+        text-align: center;
+        background-color: #FF6B6B; /* Rouge corail */
+        color: #fff; /* Blanc pour le texte */
+        padding: 1.5em 0;
+        margin-block-end: 2em;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .skills-section {
+       margin-block-end: 2em; 
+    }
+
+    .skills-section h2 {
+       border-block-end: 2px solid #FF6B6B; /* Rouge corail */
+      padding-block-end: 0.5em; 
+      margin-block-end: 1em;
+    }
+
+    .skills-list {
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+
+    .skills-list li {
+       margin-block-end: 1em;
+       font-size: 1.2em;
+    }
+
+    .project-section {
+       margin-block-end: 2em;
+    }
+
+    .project-section h2 {
+        border-block-end: 2px solid #4A90E2; /* Bleu vif */
+       padding-block-end: 0.5em;
+       margin-block-end: 1em; 
+       font-size: 1.8em;
+    }
+
+    .project-list {
+        list-style-type: none;
+        padding-inline-start: 0;
+    }
+
+    .project-list li {
+       margin-block-end: 1em;
+       font-size: 1.2em;
+    }
+
+    .project-list a {
+        color: #4A90E2; /* Bleu vif */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .project-list a:hover {
+        color: #FF6B6B; /* Rouge corail */
+        text-decoration: underline;
+    }
+
+    .projects-link {
+        text-align: center;
+         margin-block-start: 2em;
+    }
+
+    .projects-link a {
+        display: inline-block;
+        padding: 1em 2em;
+        background-color: #FF6B6B; /* Rouge corail */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        font-size: 1.2em;
+    }
+
+    .projects-link a:hover {
+        background-color: #4A90E2; /* Bleu vif */
+        color: #fff;
+    }
+</style>
+
+<div class="header">
+    <h1>COMPLETED PROJECTS & SKILLS</h1>
+</div>
+
+<div class="example-wrapper">
+    <div class="project-section">
+        <h2>Java Projects</h2>
+        <ul class="project-list">
+            <li><a href="#">Java Project 1:</a> An application for managing library books, including borrowing, returning, and searching for books.</li>
+            <li><a href="#">Java Project 2:</a> A system for booking tickets for events, such as concerts or movies.</li>
+        </ul>
+    </div>
+
+    <div class="project-section">
+        <h2>Python Projects</h2>
+        <ul class="project-list">
+            <li><a href="#">Python Project 1:</a> A program that analyzes real-time tweets to determine trends, sentiments, or other relevant information.</li>
+            <li><a href="#">Python Project 2:</a> A virtual assistant capable of performing tasks like note-taking, calendar management, or internet research.</li>
+        </ul>
+    </div>
+
+    <div class="project-section">
+        <h2>React Projects</h2>
+        <ul class="project-list">
+            <li><a href="#">React Project 1:</a> A web application for creating, updating, and tracking to-do tasks.</li>
+            <li><a href="#">React Project 2:</a> An e-commerce application with features like product search, adding to cart, and online payment.</li>
+        </ul>
+    </div>
+
+    <div class="project-section">
+        <h2>MySQL Projects</h2>
+        <ul class="project-list">
+            <li><a href="#">MySQL Project 1:</a> A database to track a company's inventory, including products, suppliers, and orders.</li>
+            <li><a href="#">MySQL Project 2:</a> A system for creating, publishing, and managing blog articles with features like comments and tags.</li>
+        </ul>
+    </div>
+
+    <div class="project-section">
+        <h2>Arduino Projects</h2>
+        <ul class="project-list">
+            <li><a href="#">Arduino Project 1:</a> A device that collects weather data such as temperature, humidity, and atmospheric pressure, and displays it on an LCD screen.</li>
+            <li><a href="#">Arduino Project 2:</a> A small robot capable of following a line drawn on the ground, using infrared sensors to detect the line.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="skills-section">
+    <h2>Data Analyst Skills</h2>
+    <ul class="skills-list">
+        <li>Data Analysis, Data Cleaning and Preparation</li>,
+        <li>Data Visualization, Statistics and Modeling</li>,
+        <li>Python (pandas, numpy), SQL</li>,
+        <li>Tableau, Power BI, Basic Machine Learning</li>
+    </ul>
+
+</div>
+
+<div class="projects-link">
+    <a href="http://127.0.0.1:8000/contact">CONTACT</a>
+</div>
+{% endblock %}

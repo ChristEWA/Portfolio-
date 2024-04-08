@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact-me{% endblock %}
+
+{% block body %}
+<style>
+    .contact-wrapper { 
+        margin: 2em auto; 
+        max-inline-size: 800px;
+       inline-size: 95%; 
+        font: 18px/1.5 sans-serif; 
+        background-color: #f9f9f9; 
+        padding: 20px; 
+        border-radius: 8px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-wrapper h1 {
+        color: #333;
+        text-align: center;
+    }
+
+    .contact-form {
+        margin-block-start: 20px; 
+    }
+
+    .contact-form label {
+        display: block;
+       margin-block-end: 8px; 
+        font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form textarea {
+        inline-size: 100%;
+        padding: 10px;
+       margin-block-end: 20px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+
+    .map-container {
+        margin-block-start: 20px;
+       block-size: 300px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .map-container iframe {
+       inline-size: 100%;
+       block-size: 100%; 
+        border: none;
+    }
+</style>
+
+<div class="contact-wrapper">
+    <h1>Contact-me ✅</h1>
+
+    <div class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.183347509753!2d2.2944815159415126!3d48.85837070877959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDU4JzM1LjIiTiAywrAzMic1Ny4yIlc!5e0!3m2!1sen!2sfr!4v1618986943827!5m2!1sen!2sfr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+<div class="projects-link">
+    <a href="http://127.0.0.1:8000/about">ABOUT ME</a>
+</div>
+
+{% endblock %}

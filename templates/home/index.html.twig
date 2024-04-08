@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+    body {
+        background-color: #f4f4f4;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .header {
+        text-align: center;
+        background-color: #007bff;
+        color: #fff;
+        padding: 2em 0;
+       margin-block-end: 2em;/* Changed margin-block-end to margin-bottom */
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .example-wrapper { 
+        margin: 0 auto; 
+        max-inline-size: 800px; /* Changed max-inline-size to max-width */
+       inline-size: 95%; /* Changed inline-size to width */
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center; /* Center the content */
+    }
+
+    .example-wrapper code { 
+        background: #F5F5F5; 
+        padding: 2px 6px; 
+    }
+
+    img {
+        max-inline-size: 70%; /* Changed max-inline-size to max-width */
+        display: block;
+        margin: 1em auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .intro-text {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-block-start: 2em; /* Changed margin-block-start to margin-top */
+    }
+
+    .projects-link {
+        text-align: center;
+        margin-block-start: 2em; /* Changed margin-block-start to margin-top */
+    }
+
+    .projects-link a {
+        display: inline-block;
+        padding: 1em 2em;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .projects-link a:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="header">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h3>{{ currentdate }}</h3>
+    <h3>Total # of certificates {{ certificate | length }}</h3> <!-- Added the missing semicolon -->
+</div>
+
+<div class="example-wrapper">
+    <img src="{{ asset('Image/Ewa.jpg') }}" alt="Ewa">
+    
+    <div class="intro-text">
+        <p>
+            Welcome to my portfolio! I am a passionate student in my 2nd year of Data & App Design, 
+            specializing in creating innovative applications and data analysis. 
+            Below, you'll discover my skills and projects. Feel free to contact me for any collaboration or questions.
+        </p>
+        
+        <p>
+            I believe in the power of data-driven solutions and user-centric design. 
+            My goal is to create meaningful applications that make a difference.
+        </p>
+    </div>
+</div>
+
+<div class="projects-link">
+    <a href="http://127.0.0.1:8000/Projets">PROJETS</a>
+</div>
+
+{% endblock %}
